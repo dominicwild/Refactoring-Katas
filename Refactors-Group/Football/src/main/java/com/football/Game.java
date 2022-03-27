@@ -42,4 +42,11 @@ public class Game {
         return awayTeamScore;
     }
 
+    boolean isHomeTeam(String teamName) {
+        return getHomeTeam().equals(teamName);
+    }
+
+    boolean isAwayTeam(String teamName) {
+        return getAwayTeam().equals(teamName);
+    }
 }
