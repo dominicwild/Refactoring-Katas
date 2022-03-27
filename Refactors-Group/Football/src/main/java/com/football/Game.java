@@ -2,10 +2,14 @@ package com.football;
 
 public class Game {
 
-    private String homeTeam;
-    private int homeTeamScore;
-    private String awayTeam;
-    private int awayTeamScore;
+    public static final String LIVERPOOL = "Liverpool";
+    public static final String EVERTON = "Everton";
+    public static final String WEST_HAM = "West Ham";
+    public static final String ASTON_VILLA = "Aston Villa";
+    private final String homeTeam;
+    private final int homeTeamScore;
+    private final String awayTeam;
+    private final int awayTeamScore;
 
     public Game(String homeTeam, int homeTeamScore, String awayTeam, int awayTeamScore) {
         this.homeTeam = homeTeam;
@@ -16,9 +20,9 @@ public class Game {
 
     public static Game[] getAllPlayed() {
         Game[] played = new Game[3];
-        played[0] = new Game("Liverpool", 2, "Everton", 0);
-        played[1] = new Game("Aston Villa", 1, "Liverpool", 1);
-        played[2] = new Game("Liverpool", 3, "West Ham", 1);
+        played[0] = new Game(LIVERPOOL, 2, EVERTON, 0);
+        played[1] = new Game(ASTON_VILLA, 1, LIVERPOOL, 1);
+        played[2] = new Game(LIVERPOOL, 3, WEST_HAM, 1);
         return played;
     }
 
