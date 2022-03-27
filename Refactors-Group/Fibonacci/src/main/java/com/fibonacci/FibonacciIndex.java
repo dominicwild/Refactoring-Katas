@@ -31,8 +31,6 @@ public class FibonacciIndex {
     }
 
     private List<Long> buildInitialSequence() {
-        List<Long> sequence = new ArrayList<Long>();
-        sequence.addAll(Arrays.asList(new Long[]{0L, 1L}));
-        return sequence;
+        return new ArrayList<>(Arrays.asList(0L, 1L));
     }
 }
